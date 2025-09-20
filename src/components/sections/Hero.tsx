@@ -7,7 +7,7 @@ export function Hero() {
     <section id="hero" className="relative w-full min-h-[calc(100vh-3.5rem)] flex items-center justify-center text-center overflow-hidden">
       <div className="container z-10 animate-in fade-in-0 slide-in-from-bottom-5 duration-500">
         <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl/none">
-          Hi, I'm <span className="text-primary">Your Name</span>
+          Hi, I'm <span className="text-primary">Amiya Kumar Behera</span>
         </h1>
         <p className="mt-6 mx-auto max-w-[700px] text-muted-foreground md:text-xl">
           I am a passionate Electronics and Communication Engineering student with a strong interest in software development and technology.

@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2 } from 'lucide-react';
 import { useState } from 'react';
@@ -29,23 +28,17 @@ export function Contact() {
 
   async function onSubmit(data: ContactFormData) {
     setIsSubmitting(true);
-    const result = await submitContactForm(data);
+    const mailtoLink = `mailto:muhmaile.31@gmail.com?subject=Contact from ${encodeURIComponent(data.name)} - ${encodeURIComponent(data.email)}&body=${encodeURIComponent(data.message)}`;
+    window.location.href = mailtoLink;
+    
+    // We can't know for sure if the email was sent, so we'll show a success message optimistically.
+    toast({
+      title: 'Success!',
+      description: 'Your email client has been opened to send the message.',
+      className: 'bg-accent text-accent-foreground border-accent',
+    });
+    form.reset();
     setIsSubmitting(false);
-
-    if (result.success) {
-      toast({
-        title: 'Success!',
-        description: result.message,
-        className: 'bg-accent text-accent-foreground border-accent',
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: 'destructive',
-        title: 'Error',
-        description: result.message,
-      });
-    }
   }
 
   return (

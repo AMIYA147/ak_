@@ -1,30 +1,6 @@
 'use server';
 
-import type { z } from 'zod';
-import { db } from '@/lib/firebase';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import type { contactSchema } from '@/lib/schemas';
-
-export type ContactFormState = {
-  message: string;
-  success: boolean;
-};
-
-export async function submitContactForm(data: z.infer<typeof contactSchema>): Promise<ContactFormState> {
-  try {
-    await addDoc(collection(db, 'contacts'), {
-      ...data,
-      createdAt: serverTimestamp(),
-    });
-    return {
-      message: 'Thank you for your message! I will get back to you soon.',
-      success: true,
-    };
-  } catch (error) {
-    console.error('Error adding document: ', error);
-    return {
-      message: 'An unexpected error occurred. Please try again later.',
-      success: false,
-    };
-  }
-}
+// This file is no longer used for the contact form, 
+// but we'll keep it for potential future server actions.
+// The contact form functionality has been moved to the client-side
+// in `src/components/sections/Contact.tsx` to open the user's email client.
