@@ -10,7 +10,7 @@ export function Hero() {
           Hi, I'm <span className="text-primary">Amiya Kumar Behera</span>
         </h1>
         <p className="mt-6 mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-          I am a passionate Electronics and Communication Engineering student with a strong interest in software development and technology.
+          ECE undergrad | Blockchain & IoT Enthusiast | Embedded Systems Developer | full stack developer
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <a href="#projects">

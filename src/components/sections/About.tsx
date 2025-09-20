@@ -7,7 +7,7 @@ export function About() {
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-primary">About Me</h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            I am a passionate Electronics and Communication Engineering student with a strong interest in software development and technology. I enjoy building applications that are both functional and user-friendly. I'm always eager to learn new technologies and take on challenging projects.
+            I am a ECE undergrad, Blockchain & IoT Enthusiast, Embedded Systems and full stack developer.
           </p>
            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             When I'm not coding, I enjoy exploring the latest tech trends, contributing to open-source projects, and reading about advancements in AI and embedded systems.
