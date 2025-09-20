@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'public/v.png';
 
 export function About() {
   return (
