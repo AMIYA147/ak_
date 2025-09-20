@@ -15,7 +15,7 @@ export function About() {
         </div>
          <div className="flex justify-center">
           <Image
-            src="/ak-logo.png"
+            src="v.png"
             alt="Amiya Kumar brand logo"
             width={400}
             height={400}
