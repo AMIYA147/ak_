@@ -21,7 +21,7 @@ export function Header() {
         <div className="mr-4 flex items-center">
           <a href="/" className="mr-6 flex items-center space-x-2">
             <Code2 className="h-6 w-6 text-primary" />
-            <span className="font-bold">PersonaPulse</span>
+            <span className="font-bold">Portfolio</span>
           </a>
           <nav className="hidden gap-6 md:flex">
             {navLinks.map((link) => (
@@ -52,7 +52,7 @@ export function Header() {
                 <div className="grid gap-4 py-4">
                   <a href="/" className="mb-4 flex items-center space-x-2" onClick={() => setSheetOpen(false)}>
                     <Code2 className="h-6 w-6 text-primary" />
-                    <span className="font-bold">PersonaPulse</span>
+                    <span className="font-bold">Portfolio</span>
                   </a>
                   {navLinks.map((link) => (
                     <SheetClose asChild key={link.name}>
