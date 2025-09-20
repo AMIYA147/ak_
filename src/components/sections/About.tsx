@@ -15,12 +15,12 @@ export function About() {
         </div>
          <div className="flex justify-center">
           <Image
-            src="https://picsum.photos/seed/profile/400/400"
-            alt="Profile Photo"
+            src="/ak-logo.png"
+            alt="Amiya Kumar brand logo"
             width={400}
             height={400}
-            className="rounded-lg object-cover w-full max-w-sm"
-            data-ai-hint="professional headshot"
+            className="rounded-lg object-contain w-full max-w-sm"
+            data-ai-hint="logo monogram"
           />
         </div>
       </div>
