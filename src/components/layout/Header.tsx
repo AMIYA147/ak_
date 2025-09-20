@@ -10,6 +10,7 @@ import {
   SheetClose
 } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false);
@@ -34,10 +35,11 @@ export function Header() {
             ))}
           </nav>
         </div>
-        <div className="flex flex-1 items-center justify-end">
+        <div className="flex flex-1 items-center justify-end gap-2">
           <a href="#contact" className="hidden md:inline-flex">
             <Button>Contact Me</Button>
           </a>
+          <ThemeToggle />
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
